@@ -168,4 +168,47 @@ Prototype: listint_t *insert_node(listint_t **head, int number);
 Return: the address of the new node, or NULL if it failed
 
 
-TASK
+TASK 14. Smile in the mirror
+Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
+
+You can only use one print function with string format
+You can only use one loop in your code
+You are not allowed to store characters in a variable
+You are not allowed to import any module
+
+TASK 15. Remove at position
+
+Write a function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”).
+
+Prototype: def remove_char_at(str, n):
+You are not allowed to import any module
+You don’t need to understand __import__
+
+
+TASK 16. ByteCode -> Python #2
+Write the Python function def magic_calculation(a, b, c): that does exactly the same as the following Python bytecode:
+
+ 3           0 LOAD_FAST                0 (a)
+              3 LOAD_FAST                1 (b)
+              6 COMPARE_OP               0 (<)
+              9 POP_JUMP_IF_FALSE       16
+
+  4          12 LOAD_FAST                2 (c)
+             15 RETURN_VALUE
+
+  5     >>   16 LOAD_FAST                2 (c)
+             19 LOAD_FAST                1 (b)
+             22 COMPARE_OP               4 (>)
+             25 POP_JUMP_IF_FALSE       36
+
+  6          28 LOAD_FAST                0 (a)
+             31 LOAD_FAST                1 (b)
+             34 BINARY_ADD
+             35 RETURN_VALUE
+
+  7     >>   36 LOAD_FAST                0 (a)
+             39 LOAD_FAST                1 (b)
+             42 BINARY_MULTIPLY
+             43 LOAD_FAST                2 (c)
+             46 BINARY_SUBTRACT
+             47 RETURN_VALUE
