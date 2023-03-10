@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    from calculato_1 imprt add, sub, mul, div
-    imprt sys
+    from calculator_1 import add, sub, mul, div
+    import sys
 
     av = sys.argv
     ac = len(av) - 1
