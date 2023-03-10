@@ -9,4 +9,4 @@ if __name__ == "__main__":
     if ac > 0:
         for i in range(ac):
             res += int(sys.argv[i + 1])
-        print("{:d}".format(res))
+    print("{:d}".format(res))
