@@ -138,4 +138,16 @@ Return: 0 if it is not a palindrome, 1 if it is a palindrome
 An empty list is considered a palindrome
 
 
-TASK 14. 
+TASK 14. CPython #0: Python lists
+Create a C function that prints some basic info about Python lists.
+
+Prototype: void print_python_list_info(PyObject *p);
+Format: see example
+Python version: 3.4
+Your shared library will be compiled with this command line: gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c
+OS: Ubuntu 14.04 LTS
+Start by reading:
+listobject.h
+object.h
+Common Object Structures
+List Objects
