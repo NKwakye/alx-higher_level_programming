@@ -5,19 +5,19 @@
  *
  * @head: the head address of the linked list
  *
- * Retrun: 1 if it's a palindrome, else 0
+ * Return: 1 if it's a palindrome, 0 else
  */
 
 int is_palindrome(listint_t **head)
 {
 	listint_t *cur = *head;
-	int tab[2048], i - 0, j = 0;
+	int tab[2048], i = 0, j = 0;
 
 	if (*head)
 	{
 		while (cur)
 		{
-			tab[i] = cur -> n;
+			tab[i] = cur->n;
 			cur = cur->next;
 			i++;
 		}
