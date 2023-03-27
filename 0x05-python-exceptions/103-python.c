@@ -7,7 +7,6 @@
  * @p: Python Object
  * Return: no return
  */
-
 void print_python_bytes(PyObject *p)
 {
 	char *string;
@@ -15,10 +14,10 @@ void print_python_bytes(PyObject *p)
 
 	setbuf(stdout, NULL);
 
-	printf("[.] bytes object onfo\n");
+	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
 	{
-		print(" [ERROR] Invalid Bytes Object\n");
+		printf("  [ERROR] Invalid Bytes Object\n");
 		setbuf(stdout, NULL);
 		return;
 	}
