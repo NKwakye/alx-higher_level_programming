@@ -1,4 +1,4 @@
-i# 2-matrix_divided.txt
+# 2-matrix_divided.txt
 ==============================
 How to Use 2-matrix_divided.py
 ==============================
