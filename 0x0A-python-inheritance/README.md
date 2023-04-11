@@ -78,8 +78,7 @@ print() should print, and str() should return, the following rectangle descripti
 
 
 TASK 10. Square #1
-Write a class Square that inherits from Rectangle (9-rectangle.py):
-
+Write a class Square that inherits from Rectangle (9-rectangle.py)
 Instantiation with size: def __init__(self, size)::
 size must be private. No getter or setter
 size must be a positive integer, validated by integer_validator
@@ -96,4 +95,16 @@ the area() method must be implemented
 print() should print, and str() should return, the square description: [Square] <width>/<height>
 
 
-TASK 12. 
+TASK 12. My integer
+Write a class MyInt that inherits from int:
+
+MyInt is a rebel. MyInt has == and != operators inverted
+You are not allowed to import any module
+
+
+TASK 13. Can I?
+Write a function that adds a new attribute to an object if it’s possible:
+
+Raise a TypeError exception, with the message can't add new attribute if the object can’t have new attribute
+You are not allowed to use try/except
+You are not allowed to import any module
