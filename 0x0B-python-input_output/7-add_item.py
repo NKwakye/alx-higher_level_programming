@@ -1,20 +1,23 @@
 #!/usr/bin/python3
-# 9-add_item.py
-"""Add item script."""
-import sys
-
+"""
+script to save and load
+"""
+from sys import argv
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
+
+filename = 'add_item.json'
+my_list = []
 try:
-    lst = load_from_json_file("add_item.json")
-except:
-    lst = []
+    my_list = load_from_json_file(filename)
+except Exception:
+    save_to_json_file(my_list, filename)
 
-argc = len(sys.argv)
+arg_len = len(argv)
 
-if argc > 1:
-    for i in range(1, argc):
-        lst.append(sys.argv[i])
+if arg_len > 1:
+    for i in range(1, arg_len):
+        my_list.append(argv[i])
 
-save_to_json_file(lst, "add_item.json")
+    save_to_json_file(my_list, fil
