@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x0B$ cat 101-generator.py
 #!/usr/bin/python3
 import random
 import sys
