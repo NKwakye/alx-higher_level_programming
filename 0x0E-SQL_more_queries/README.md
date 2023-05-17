@@ -175,4 +175,47 @@ You can use only one SELECT statement
 The database name will be passed as an argument of the mysql command
 
 
-TASK 17. 
+TASK 17. Not my genre
+Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 16-shows_by_genre.sql)
+
+Write a script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
+
+The tv_shows table contains only one record where title = Dexter (but the id can be different)
+Each record should display: tv_genres.name
+Results must be sorted in ascending order by the genre name
+You can use a maximum of two SELECT statement
+The database name will be passed as an argument of the mysql command
+
+
+TASK 18. No Comedy tonight!
+Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 100-not_my_genres.sql)
+
+Write a script that lists all shows without the genre Comedy in the database hbtn_0d_tvshows.
+
+The tv_genres table contains only one record where name = Comedy (but the id can be different)
+Each record should display: tv_shows.title
+Results must be sorted in ascending order by the show title
+You can use a maximum of two SELECT statement
+The database name will be passed as an argument of the mysql command
+
+
+TASK 19. Rotten tomatoes
+Import the database hbtn_0d_tvshows_rate dump to your MySQL server: download
+
+Write a script that lists all shows from hbtn_0d_tvshows_rate by their rating.
+
+Each record should display: tv_shows.title - rating sum
+Results must be sorted in descending order by the rating
+You can use only one SELECT statement
+The database name will be passed as an argument of the mysql command
+
+
+TASK 20. Best genre
+Import the database dump from hbtn_0d_tvshows_rate to your MySQL server: download (same as 102-rating_shows.sql)
+
+Write a script that lists all genres in the database hbtn_0d_tvshows_rate by their rating.
+
+Each record should display: tv_genres.name - rating sum
+Results must be sorted in descending order by their rating
+You can use only one SELECT statement
+The database name will be passed as an argument of the mysql command
