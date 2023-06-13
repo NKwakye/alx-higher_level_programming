@@ -1,4 +1,5 @@
-t fs = require('fs');
+#!/usr/bin/node
+const fs = require('fs');
 const argv = process.argv;
 
 const file1 = fs.readFileSync(argv[2], 'utf-8').toString();
