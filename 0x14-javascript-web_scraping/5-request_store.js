@@ -1,19 +1,16 @@
 #!/usr/bin/node
-const process = require('process');
+/* Stores the contents of a webpage in a file */
+
 const request = require('request');
-const filesystem = require('fs');
+const fs = require('fs');
+const url = process.argv[2];
+const filename = process.argv[3];
 
-let url = process.argv[2];
-let filepath = process.argv[3];
-
-request(url, function (error, response, body) {
-  if (error != null) {
-    console.log(error);
-  } else {
-    filesystem.writeFile(filepath, body, 'utf8', function (err, data) {
-      if (err != null) {
-        console.log(error);
-      }
+request(url, (err, response, body) => {
+  if (err) console.log(err);
+  else {
+    fs.writeFile(filename, body, 'utf8', (err) => {
+      if (err) console.log(err);
     });
   }
 });

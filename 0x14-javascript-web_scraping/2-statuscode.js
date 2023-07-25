@@ -1,13 +1,10 @@
 #!/usr/bin/node
-const process = require('process');
+/* Displays the status code of a GET request */
+
 const request = require('request');
+const url = process.argv[2];
 
-let url = process.argv[2];
-
-request(url, function (error, response, body) {
-  if (error != null) {
-    console.log(error);
-  } else {
-    console.log('code:', response.statusCode);
-  }
+request(url, (err, response) => {
+  if (err) console.log(err);
+  else console.log('code:', response.statusCode);
 });
